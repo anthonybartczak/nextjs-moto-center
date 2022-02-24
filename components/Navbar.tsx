@@ -1,27 +1,79 @@
-import Image from 'next/image';
+import { Disclosure } from '@headlessui/react'
+import { MenuIcon, XIcon } from '@heroicons/react/outline'
 
-export const Navbar = () => {
-    return (
+const navigation = [
+  { name: 'O Nas', href: '#', current: true },
+  { name: 'Stacja Kontroli', href: '#', current: false },
+  { name: 'Serwis', href: '#', current: false },
+  { name: 'Geometria i Opony', href: '#', current: false },
+  { name: 'Obsługa Flot', href: '#', current: false },
+  { name: 'Kontakt', href: '#', current: false },
+]
+
+function classNames(...classes: string[]) {
+  return classes.filter(Boolean).join(' ')
+}
+
+export default function Navbar() {
+  return (
+    <Disclosure as="nav" className="bg-gray-800">
+      {({ open }) => (
         <>
-            <nav className="container flex justify-around py-6 mx-auto bg-gray-200">
-            <div>
-            <Image
-                loader={myLoader}
-                src="me.png"
-                alt="Picture of the author"
-                width={500}
-                height={500}
-            />
+          <div className="mx-auto px-2 sm:px-6 lg:px-8">
+            <div className="relative flex items-center justify-between h-16">
+              <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
+                {/* Mobile menu button*/}
+                <Disclosure.Button className="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
+                  <span className="sr-only">Open main menu</span>
+                  {open ? (
+                    <XIcon className="block h-6 w-6" aria-hidden="true" />
+                  ) : (
+                    <MenuIcon className="block h-6 w-6" aria-hidden="true" />
+                  )}
+                </Disclosure.Button>
+              </div>
+              <div className="flex-1 flex items-center justify-center sm:items-stretch">
+                <div className="hidden sm:block sm:ml-6">
+                  <div className="flex space-x-4">
+                    {navigation.map((item) => (
+                      <a
+                        key={item.name}
+                        href={item.href}
+                        className={classNames(
+                          item.current ? 'bg-gray-900 text-white' : 'text-gray-300 hover:bg-gray-700 hover:text-white',
+                          'px-3 py-2 rounded-md text-sm font-medium'
+                        )}
+                        aria-current={item.current ? 'page' : undefined}
+                      >
+                        {item.name}
+                      </a>
+                    ))}
+                  </div>
+                </div>
+              </div>
             </div>
-            <div className="space-x-8">
-                <a className="hover:text-gray-600 hover:underline decoration-blue-500" href="">O Nas</a>
-                <a href="">Stacja Kontroli</a>
-                <a href="">Serwis</a>
-                <a href="">Geometria / Opony</a>
-                <a href="">Obłsuga Flot</a>
-                <a href="">Kontakt</a>
+          </div>
+
+          <Disclosure.Panel className="sm:hidden">
+            <div className="px-2 pt-2 pb-3 space-y-1">
+              {navigation.map((item) => (
+                <Disclosure.Button
+                  key={item.name}
+                  as="a"
+                  href={item.href}
+                  className={classNames(
+                    item.current ? 'bg-gray-900 text-white' : 'text-gray-300 hover:bg-gray-700 hover:text-white',
+                    'block px-3 py-2 rounded-md text-base font-medium'
+                  )}
+                  aria-current={item.current ? 'page' : undefined}
+                >
+                  {item.name}
+                </Disclosure.Button>
+              ))}
             </div>
-            </nav>
+          </Disclosure.Panel>
         </>
-    )
+      )}
+    </Disclosure>
+  )
 }
