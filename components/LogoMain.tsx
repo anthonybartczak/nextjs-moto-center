@@ -1,14 +1,39 @@
 import React from "react";
+import { motion } from 'framer-motion';
+
+const bgVariant= {
+  hidden : {
+    opacity : 0,
+    pathLength : 0,
+    size : 0,
+  },
+  visible : {
+    opacity : 1,
+    pathLength: 1,
+    size: 1,
+    transition: {
+      type:"spring",
+      duration: 3,
+      ease: "easeInOut"
+    }
+  }
+}
 
 function LogoMain() {
     return (
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 799.98 562.38">
+      <motion.svg
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 799.98 562.38"
+        variants={bgVariant}
+        initial="hidden"
+        animate="visible"
+      >
       <g>
-        <path
+        <motion.path
           fill="#f7e733"
           d="M571 542.8c109.4-35.1 193-132.5 221.8-242.4 6.4-24.2 12.7-52.2-1-75.3-9.7-16.5-33.5-14.7-49.3-8.4-12.3 4.9-23.2 12.9-34.2 20.3-17.4 11.7-52.2 32.6-67 6.1-4.3-7.6-5.1-16.7-4.6-25.4 1.4-24 13.3-47 31.4-62.6 17.2-14.8 39.5-22.7 55.6-39 16.5-16.6 22.9-41.8 16.9-64.5a69.74 69.74 0 00-39.7-45.7c-29.3-12.3-62.8-3-92.6 7.7a1025.55 1025.55 0 00-200 97.6c-10.2 6.4-19.7 13.4-30.9 17.9-19.4 7.8-37.3 6.2-56.7-.1-29.8-9.6-55.8-29-87.4-33.3-44-6-87-4.8-127.4 16C3.5 164.3-31.6 342.4 31.5 437.9a145.73 145.73 0 0023.3 27.5c16.9 15.6 44.4 25.9 65.1 35.2 45.6 20.4 93.9 34.5 142.9 43.7C362.2 563 473.5 574 571 542.8z"
           transform="translate(.02 -.05)"
-        ></path>
+        ></motion.path>
         <ellipse
           cx="348.32"
           cy="92.25"
@@ -451,7 +476,7 @@ function LogoMain() {
           transform="translate(.02 -.05)"
         ></path>
       </g>
-    </svg>
+    </motion.svg>
       );
 }
 
