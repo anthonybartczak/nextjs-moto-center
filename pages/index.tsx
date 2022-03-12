@@ -23,10 +23,10 @@ const Home: NextPage = () => {
             fugiat veniam occaecat fugiat aliqua.
           </p>
           <div className="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start">
-            <div className="rounded-md shadow">
+            <div className="rounded-md">
               <a
                 href="#"
-                className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-gray-800 hover:bg-gray-900 md:py-4 md:text-lg md:px-10"
+                className="inline-block px-8 py-3 text-xl font-medium text-white transition bg-indigo-600 rounded hover:scale-110 hover:shadow-xl active:bg-indigo-500 focus:outline-none focus:ring"
               >
                 Skontaktuj się z nami!
               </a>
