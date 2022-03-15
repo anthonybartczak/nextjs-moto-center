@@ -3,6 +3,7 @@ import Head from 'next/head'
 import Navbar from '../components/Navbar'
 import LogoMain from '../components/LogoMain';
 import MainSiteCards from '../components/MainSiteCards';
+import MainSiteClients from '../components/MainSiteClients';
 
 const Home: NextPage = () => {
   return (
@@ -39,10 +40,8 @@ const Home: NextPage = () => {
             <LogoMain/>
           </div>
         </div>
-        <h2 className="mt-64 text-4xl text-center tracking-tight font-extrabold text-gray-900 sm:text-5xl md:text-6xl">
-          <span className="block xl:inline">Nasze usługi</span>
-        </h2>
         <MainSiteCards/>
+        <MainSiteClients/>
       </main>
 
       <footer>
