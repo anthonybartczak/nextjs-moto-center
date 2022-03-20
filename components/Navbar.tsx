@@ -1,5 +1,6 @@
 import { Disclosure } from '@headlessui/react'
 import { AiOutlineMenu, AiOutlineClose } from 'react-icons/ai'
+import { useState, useEffect } from 'react';
 
 const navigation = [
   { name: 'O Nas', href: '#', current: true },
@@ -15,8 +16,23 @@ function classNames(...classes: string[]) {
 }
 
 export default function Navbar() {
+
+  const [navbar, setNavbar] = useState(false);
+
+  const changeBackground = () => {
+    if(window.scrollY >= 50) {
+      setNavbar(true)
+    } else {
+      setNavbar(false)
+    }
+  }
+
+  useEffect(() => {
+    window.addEventListener('scroll', changeBackground)
+  })
+
   return (
-    <Disclosure as="nav" className="">
+    <Disclosure as="nav" className={navbar ? 'bg-gray-50 shadow-lg sticky top-0 z-50 transition-duration-400' : ''}>
       {({ open }) => (
         <>
           <div className="mx-auto px-2 sm:px-6 lg:px-8">
