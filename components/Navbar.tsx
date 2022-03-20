@@ -3,12 +3,12 @@ import { AiOutlineMenu, AiOutlineClose } from 'react-icons/ai'
 import { useState, useEffect } from 'react';
 
 const navigation = [
-  { name: 'O Nas', href: '#', current: true },
-  { name: 'Stacja Kontroli', href: '#', current: false },
-  { name: 'Serwis', href: '#', current: false },
-  { name: 'Geometria i Opony', href: '#', current: false },
-  { name: 'Obsługa Flot', href: '#', current: false },
-  { name: 'Kontakt', href: '#', current: false },
+  { name: 'O NAS', href: '#', current: false },
+  { name: 'STACJA KONTROLI', href: '#', current: false },
+  { name: 'SERWIS', href: '#', current: false },
+  { name: 'GEOMETRIA I OPONY', href: '#', current: false },
+  { name: 'OBSŁUGA FLOT', href: '#', current: false },
+  { name: 'KONTAKT', href: '#', current: false },
 ]
 
 function classNames(...classes: string[]) {
@@ -39,7 +39,7 @@ export default function Navbar() {
             <div className="relative flex items-center justify-between h-16">
               <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
                 {/* Mobile menu button*/}
-                <Disclosure.Button className="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
+                <Disclosure.Button className="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-indigo-600 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
                   <span className="sr-only">Open main menu</span>
                   {open ? (
                     <AiOutlineClose className="block h-6 w-6" aria-hidden="true" />
@@ -57,7 +57,7 @@ export default function Navbar() {
                         href={item.href}
                         className={classNames(
                           item.current ? 'bg-indigo-600 text-white' : 'hover:bg-indigo-600 hover:text-white',
-                          'px-3 py-2 rounded-md text-sm font-medium'
+                          'px-3 py-2 rounded-xl text-sm font-medium hover:no-underline underline underline-offset-8'
                         )}
                         aria-current={item.current ? 'page' : undefined}
                       >
@@ -78,7 +78,7 @@ export default function Navbar() {
                   as="a"
                   href={item.href}
                   className={classNames(
-                    item.current ? 'bg-gray-900 text-white' : 'text-gray-300 hover:bg-gray-700 hover:text-white',
+                    item.current ? 'bg-indigo-600 text-white' : 'hover:bg-indigo-600 hover:text-white',
                     'block px-3 py-2 rounded-md text-base font-medium'
                   )}
                   aria-current={item.current ? 'page' : undefined}

@@ -4,7 +4,7 @@ export default function MainSiteCards() {
   return (<section>
       <div className="max-w-screen-xl px-4 py-16 mx-auto sm:px-6 lg:px-8">
         <h2 className="mt-32 text-4xl text-center tracking-tight font-bold text-gray-900 sm:text-5xl md:text-4xl">
-          <span className="block xl:inline">Nasze usługi</span>
+          <span className="block xl:inline">Nasze Usługi</span>
         </h2>
         <div className="grid grid-cols-1 mt-12 justify-items-stretch gap-8 md:grid-cols-2 lg:grid-cols-3">
           <a className="block p-8 transition border border-gray-400 shadow-xl rounded-xl hover:shadow-indigo-500/20 hover:border-indigo-500" href="/services/digital-campaigns">
