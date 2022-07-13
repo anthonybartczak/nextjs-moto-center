@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function MainSiteClients() {
+export default function MainClients() {
     return (
         <section>
             <h2 className="mt-64 text-4xl text-center tracking-tight font-bold text-gray-900 sm:text-5xl md:text-4xl">

@@ -10,6 +10,8 @@ export default function Footer() {
             uppercase
             font-semibold
             mb-4
+            mt-10
+            xl:mt-2
             mx-auto
             flex
             items-center
@@ -28,7 +30,7 @@ export default function Footer() {
                     <p className="mb-1 font-light">KRS: 0000315866</p>
                     <p className="mb-1 font-light">REGON: 020833641</p>
                 </div>
-                <div className="mx-auto">
+                <div className="mx-auto mt-10 xl:mt-2">
                     <h6 className="uppercase font-semibold mb-4 flex justify-center md:justify-start">
                         Kontakt
                     </h6>
@@ -60,7 +62,7 @@ export default function Footer() {
                         +48 509 96 94 91
                     </p>
                 </div>
-                <div className="mx-auto justify-center xl:justify-start">
+                <div className="mx-auto justify-center xl:justify-start mt-10 xl:mt-2">
                     <a href="/kontakt"
                         className="p-1 text-md font-medium text-white transition bg-gray-400 rounded hover:scale-110 hover:shadow-xl active:bg-indigo-500 focus:outline-none focus:ring">
                         Skontaktuj się z nami!

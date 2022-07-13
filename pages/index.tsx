@@ -2,8 +2,9 @@ import type { NextPage } from 'next'
 import Head from 'next/head'
 import Navbar from '../components/Navbar'
 import LogoMain from '../components/LogoMain';
-import MainSiteCards from '../components/MainSiteCards';
-import MainSiteClients from '../components/MainSiteClients';
+import MainCards from '../components/MainCards';
+import MainClients from '../components/MainClients';
+import MainCounter from '../components/MainCounter';
 import Footer from '../components/Footer';
 
 const Home: NextPage = () => {
@@ -39,8 +40,9 @@ const Home: NextPage = () => {
             <LogoMain />
           </div>
         </div>
-        <MainSiteCards />
-        {/* <MainSiteClients /> */}
+        <MainCounter/>
+        <MainCards />
+        {/* <MainClients /> */}
       </main>
 
       <Footer />
