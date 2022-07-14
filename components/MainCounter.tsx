@@ -3,7 +3,7 @@ import CountUp from 'react-countup';
 
 export default function MainCounter() {
     return (
-        <section className="">
+        <section className="mx-4">
             <h2 className="mt-32 text-4xl text-center tracking-tight font-bold text-gray-900 sm:text-5xl md:text-4xl">
                 <span className="block xl:inline">O Nas</span>
             </h2>
@@ -13,8 +13,8 @@ export default function MainCounter() {
                 fugiat veniam occaecat fugiat aliqua. Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo. Elit sunt amet
                 fugiat veniam occaecat fugiat aliqua.
                 </h3>
-                <div className="flex gap-12 justify-center">
-                    <div className="mt-16 flex">
+                <div className="mt-10 flex flex-wrap gap-12 justify-center">
+                    <div className="flex">
                         <CountUp start={0} end={8} delay={0}>
                             {({ countUpRef }) => (
                                 <>
@@ -25,7 +25,7 @@ export default function MainCounter() {
                             )}
                         </CountUp>
                     </div>
-                    <div className="mt-16 flex">
+                    <div className="flex">
                         <CountUp start={0} end={10000} delay={0}>
                             {({ countUpRef }) => (
                                 <>
