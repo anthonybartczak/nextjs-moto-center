@@ -10,6 +10,9 @@ module.exports = {
       fontFamily: {
         'sans': ['Proxima Nova', ...defaultTheme.fontFamily.sans],
       },
+      minWidth: {
+        '24': '6rem',
+      },
     },
   },
   plugins: [],
