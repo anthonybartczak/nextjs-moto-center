@@ -1,10 +1,11 @@
 import { AiFillFacebook, AiFillGoogleSquare } from "react-icons/ai";
+import Link from "next/link";
 
 export default function Footer() {
   return (
     <footer className="text-center lg:text-left items-center bg-gray-100 text-gray-600">
         <div className="mx-24 py-10 text-center md:text-left">
-            <div className="grid content-center grid-1 md:grid-cols-3 lg:grid-cols-3">
+            <div className="grid content-center grid-1 md:grid-cols-3 lg:grid-cols-4">
                 <div className="">
                     <h6 className="
             uppercase
@@ -29,6 +30,16 @@ export default function Footer() {
                     <p className="mb-1 font-light">NIP: 894-295-89-31</p>
                     <p className="mb-1 font-light">KRS: 0000315866</p>
                     <p className="mb-1 font-light">REGON: 020833641</p>
+                </div>
+                <div className="mx-auto mt-10 xl:mt-2">
+                    <h6 className="uppercase font-semibold mb-4 flex justify-center md:justify-start">
+                        Godziny otwarcia
+                    </h6>
+                    <div className="grid grid-cols-2">
+                        <p className="flex items-center justify-center md:justify-start mb-2 font-light">
+                            Poniedziałek
+                        </p>
+                    </div>
                 </div>
                 <div className="mx-auto mt-10 xl:mt-2">
                     <h6 className="uppercase font-semibold mb-4 flex justify-center md:justify-start">
@@ -63,10 +74,11 @@ export default function Footer() {
                     </p>
                 </div>
                 <div className="mx-auto justify-center xl:justify-start mt-10 xl:mt-2">
-                    <a href="/kontakt"
-                        className="p-1 text-md font-medium text-white transition bg-gray-400 rounded hover:scale-110 hover:shadow-xl active:bg-indigo-500 focus:outline-none focus:ring">
-                        Skontaktuj się z nami!
-                    </a>
+                    <Link href="/kontakt">
+                        <a className="p-1 text-md font-medium text-white transition bg-gray-400 rounded hover:scale-110 hover:shadow-xl active:bg-indigo-500 focus:outline-none focus:ring">
+                            Skontaktuj się z nami!
+                        </a>
+                    </Link>
                     <a href="https://www.facebook.com/Wroc%C5%82aw-Serwis-4x4-228347537335333/" className="flex items-center justify-center md:justify-start font-light mt-4 mb-2">
                         <AiFillFacebook className="w-4 h-4 mr-4"/>
                         Wrocław Serwis 4x4

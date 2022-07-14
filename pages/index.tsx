@@ -6,6 +6,7 @@ import MainCards from '../components/MainCards';
 import MainClients from '../components/MainClients';
 import MainCounter from '../components/MainCounter';
 import Footer from '../components/Footer';
+import Link from 'next/link';
 
 const Home: NextPage = () => {
   return (
@@ -30,10 +31,11 @@ const Home: NextPage = () => {
               fugiat veniam occaecat fugiat aliqua.
             </p>
             <div className="mt-5 sm:mt-8 sm:flex justify-center xl:justify-start">
-                <a href="#"
-                  className="inline-block px-8 py-3 text-xl font-medium text-white transition bg-indigo-600 rounded hover:scale-110 hover:shadow-xl active:bg-indigo-500 focus:outline-none focus:ring">
+              <Link href="/kontakt">
+                <a className="inline-block px-8 py-3 text-xl font-medium text-white transition bg-indigo-600 rounded hover:scale-110 hover:shadow-xl active:bg-indigo-500 focus:outline-none focus:ring">
                   Skontaktuj się z nami!
                 </a>
+              </Link>
             </div>
           </div>
           <div className="flex-initial grow mx-4 pt-6 xl:pt-2 max-w-xl justify-center">
