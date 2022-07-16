@@ -4,11 +4,9 @@ import { useState, useEffect } from 'react';
 
 const navigation = [
   { name: 'O NAS', href: '#', current: false },
-  { name: 'STACJA KONTROLI', href: '#', current: false },
-  { name: 'SERWIS', href: '#', current: false },
-  { name: 'GEOMETRIA I OPONY', href: '#', current: false },
-  { name: 'OBSŁUGA FLOT', href: '#', current: false },
-  { name: 'KONTAKT', href: '#', current: false },
+  { name: 'NASZE USŁUGI', href: '#', current: false },
+  { name: 'JAK DOJECHAĆ?', href: '#', current: false },
+  { name: 'KONTAKT', href: 'kontakt', current: false },
 ]
 
 function classNames(...classes: string[]) {

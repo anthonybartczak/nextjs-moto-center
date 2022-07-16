@@ -1,7 +1,7 @@
 import React from "react";
 import CountUp from 'react-countup';
 
-export default function MainCounter() {
+export default function Counter() {
     return (
         <section className="mx-4">
             <h2 className="mt-32 text-4xl text-center tracking-tight font-bold text-gray-900 sm:text-5xl md:text-4xl">

@@ -2,9 +2,10 @@ import type { NextPage } from 'next'
 import Head from 'next/head'
 import Navbar from '../components/Navbar'
 import LogoMain from '../components/LogoMain';
-import MainCards from '../components/MainCards';
-import MainClients from '../components/MainClients';
-import MainCounter from '../components/MainCounter';
+import Cards from '../components/main/Cards';
+import Clients from '../components/main/Clients';
+import Counter from '../components/main/Counter';
+import Map from '../components/main/Map';
 import Footer from '../components/Footer';
 import Link from 'next/link';
 
@@ -42,8 +43,9 @@ const Home: NextPage = () => {
             <LogoMain />
           </div>
         </div>
-        <MainCounter/>
-        <MainCards />
+        <Counter/>
+        <Cards />
+        <Map/>
         {/* <MainClients /> */}
       </main>
 

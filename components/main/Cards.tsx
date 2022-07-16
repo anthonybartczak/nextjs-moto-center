@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function MainCards() {
+export default function Cards() {
   return (<section>
       <div className="max-w-screen-xl px-4 py-16 mx-auto sm:px-6 lg:px-8">
         <h2 className="mt-32 text-4xl text-center tracking-tight font-bold text-gray-900 sm:text-5xl md:text-4xl">
