@@ -5,7 +5,7 @@ export default function Map() {
 
     require('dotenv').config()
 
-    var googleKey:string = process.env.GOOGLE_API_KEY!
+    var googleKey:string = process.env.REACT_APP_GOOGLE_API_KEY!
     console.log(googleKey)
     const env = process.env.NODE_ENV
     console.log(env)
