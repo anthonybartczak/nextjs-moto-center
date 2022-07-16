@@ -6,10 +6,13 @@ export default function Map() {
     require('dotenv').config()
 
     var googleKey:string = process.env.GOOGLE_API_KEY!
+    console.log(googleKey)
     const env = process.env.NODE_ENV
-    if (env == "development"){
+    console.log(env)
+    if (env == "development") {
         googleKey = ''
     }
+    console.log(googleKey)
 
     const AnyReactComponent = ({ text } : any) => <div>{text}</div>;
 
