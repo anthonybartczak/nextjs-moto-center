@@ -86,7 +86,7 @@ export default function Footer() {
         </div>
         <div className="text-center p-6 bg-gray-200">
             <span>© 2022 Copyright: </span>
-            <a className="text-gray-600" href="https://www.anthonyb.tech/">Anteriam</a>
+            <a className="text-gray-600" href="https://www.anteriam.live/">Anteriam</a>
         </div>
     </footer>
   )

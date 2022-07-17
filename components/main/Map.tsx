@@ -11,14 +11,21 @@ export default function Map() {
         googleKey = ''
     }
 
-    const AnyReactComponent = ({ text } : any) => <div>{text}</div>;
-
     const defaultProps = {
         center: {
           lat: 51.0833587,
           lng: 17.0628431
         },
         zoom: 15
+    };
+
+    const renderMarkers = (map:any , maps:any) => {
+        let marker = new maps.Marker({
+            position: defaultProps.center,
+            map,
+            title: 'Serwis 4x4'
+        });
+        return marker;
     };
 
     return (
@@ -28,12 +35,8 @@ export default function Map() {
                 bootstrapURLKeys={{ key: googleKey}}
                 defaultCenter={defaultProps.center}
                 defaultZoom={defaultProps.zoom}
+                onGoogleApiLoaded={({map, maps}) => renderMarkers(map, maps)}
             >
-            <AnyReactComponent
-                lat={59.955413}
-                lng={30.337844}
-                text="My Marker"
-            />
             </GoogleMapReact>
         </section>
     );
