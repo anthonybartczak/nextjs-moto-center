@@ -84,7 +84,7 @@ export default function Footer() {
                     </p>
                 </div>
                 <div className="mx-auto justify-center xl:justify-start mt-10 xl:mt-2">
-                    <Link href="/kontakt">
+                    <Link href="/contact">
                         <a className="p-1 text-md font-medium text-white transition bg-gray-400 rounded hover:scale-110 hover:shadow-xl active:bg-indigo-500 focus:outline-none focus:ring">
                             Skontaktuj się z nami!
                         </a>

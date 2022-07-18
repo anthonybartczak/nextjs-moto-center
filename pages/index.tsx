@@ -31,7 +31,7 @@ const Home: NextPage = () => {
               fugiat veniam occaecat fugiat aliqua.
             </p>
             <div className="mt-5 sm:mt-8 sm:flex justify-center xl:justify-start">
-              <Link href="/kontakt">
+              <Link href="/contact">
                 <a className="inline-block px-8 py-3 text-xl font-medium text-white transition bg-indigo-600 rounded hover:scale-110 hover:shadow-xl active:bg-indigo-500 focus:outline-none focus:ring">
                   Skontaktuj się z nami!
                 </a>
