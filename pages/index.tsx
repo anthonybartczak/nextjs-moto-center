@@ -2,9 +2,8 @@ import type { NextPage } from 'next'
 import Head from 'next/head'
 import Navbar from '../components/Navbar'
 import LogoMain from '../components/LogoMain';
-import Cards from '../components/main/Cards';
-import Clients from '../components/main/Clients';
-import Counter from '../components/main/Counter';
+import OurServices from '../components/main/OurServices';
+import AboutUs from '../components/main/AboutUs';
 import Map from '../components/main/Map';
 import Footer from '../components/Footer';
 import Link from 'next/link';
@@ -20,8 +19,8 @@ const Home: NextPage = () => {
       <Navbar />
       <main>
         <div
-          className="flex flex-wrap mt-10 mx-auto max-w-7xl px-4 sm:mt-12 sm:px-6 md:mt-16 lg:mt-20 lg:px-8 xl:mt-36">
-          <div className="text-center md:text-left">
+          className="flex flex-wrap mt-12 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div className="text-center md:text-left mx-auto xl:mt-16">
             <h1 className="text-4xl tracking-tight font-extrabold text-gray-900 sm:text-5xl md:text-6xl">
               <span className="block xl:inline">Centrum Usług</span>{' '}
               <span className="block text-indigo-600">Motoryzacyjnych</span>
@@ -39,12 +38,12 @@ const Home: NextPage = () => {
               </Link>
             </div>
           </div>
-          <div className="flex-initial grow mx-4 pt-6 xl:pt-2 max-w-xl justify-center">
+          <div className="flex-initial grow mx-4 pt-6 xl:pt-2 max-w-md justify-center">
             <LogoMain />
           </div>
         </div>
-        <Counter/>
-        <Cards />
+        <AboutUs/>
+        <OurServices/>
         <Map/>
         {/* <MainClients /> */}
       </main>

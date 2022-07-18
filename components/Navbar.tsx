@@ -3,10 +3,10 @@ import { AiOutlineMenu, AiOutlineClose } from 'react-icons/ai'
 import { useState, useEffect } from 'react';
 
 const navigation = [
-  { name: 'O NAS', href: '#', current: false },
-  { name: 'NASZE USŁUGI', href: '#', current: false },
-  { name: 'JAK DOJECHAĆ?', href: '#', current: false },
-  { name: 'KONTAKT', href: 'kontakt', current: false },
+  { name: 'O NAS', href: '#about-us', current: false },
+  { name: 'NASZE USŁUGI', href: '#our-services', current: false },
+  { name: 'JAK DOJECHAĆ?', href: '#destination', current: false },
+  { name: 'KONTAKT', href: 'contact', current: false },
 ]
 
 function classNames(...classes: string[]) {
@@ -53,7 +53,7 @@ export default function Navbar() {
                   {navigation.map((item) => (
                   <a key={item.name} href={item.href} className={classNames( item.current ? 'bg-indigo-600 text-white'
                     : 'hover:bg-indigo-600 hover:text-white'
-                    , 'px-3 py-2 rounded text-sm font-medium hover:no-underline underline underline-offset-8' )}
+                    , 'px-3 py-2 rounded text-sm font-medium hover:no-underline underline underline-offset-8 decoration-3 decoration-indigo-600' )}
                     aria-current={item.current ? 'page' : undefined}>
                     {item.name}
                   </a>

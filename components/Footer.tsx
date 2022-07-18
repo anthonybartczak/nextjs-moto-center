@@ -4,7 +4,7 @@ import Link from "next/link";
 export default function Footer() {
   return (
     <footer className="text-center lg:text-left items-center bg-gray-100 text-gray-600">
-        <div className="mx-24 py-10 text-center md:text-left">
+        <div className="mx-6 py-10 text-center md:text-left">
             <div className="grid content-center grid-1 md:grid-cols-3 lg:grid-cols-4">
                 <div className="mx-auto">
                     <h6 className="
@@ -24,18 +24,30 @@ export default function Footer() {
                     <p className="mb-1 font-light">KRS: 0000315866</p>
                     <p className="mb-1 font-light">REGON: 020833641</p>
                 </div>
-                <div className="mx-auto mt-10 xl:mt-2">
+                <div className="mx-auto lg:mx-auto mt-10 xl:mt-2">
                     <h6 className="uppercase font-semibold mb-4 flex md:justify-start items-center justify-center">
                         Godziny otwarcia
                     </h6>
-                    <ul className="mb-2">
+                    <h6 className="font-light mb-1 underline">Warsztat</h6>
+                    <ul className="mb-4">
                         <li className="flex columns gap-4 font-light">
                             <span className="min-w-24">Pon. - Pt.</span>
-                            <span>7:00 - 19:00</span>
+                            <span>7:00 - 18:00</span>
                         </li>
                         <li className="flex columns gap-4 font-light">
                             <span className="min-w-24">Sobota</span>
-                            <span>9:00 - 19:00</span>
+                            <span>8:00 - 15:00</span>
+                        </li>
+                    </ul>
+                    <h6 className="font-light mb-1 underline">Stacja kontroli pojazdów</h6>
+                    <ul className="">
+                        <li className="flex columns gap-4 font-light">
+                            <span className="min-w-24">Pon. - Pt.</span>
+                            <span>7:00 - 20:00</span>
+                        </li>
+                        <li className="flex columns gap-4 font-light">
+                            <span className="min-w-24">Sobota</span>
+                            <span>8:00 - 15:00</span>
                         </li>
                     </ul>
                 </div>
