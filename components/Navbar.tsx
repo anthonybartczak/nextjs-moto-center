@@ -3,9 +3,9 @@ import { AiOutlineMenu, AiOutlineClose } from 'react-icons/ai'
 import { useState, useEffect } from 'react';
 
 const navigation = [
-  { name: 'O NAS', href: '#about-us', current: false },
-  { name: 'NASZE USŁUGI', href: '#our-services', current: false },
-  { name: 'JAK DOJECHAĆ?', href: '#destination', current: false },
+  { name: 'O NAS', href: '/#about-us', current: false },
+  { name: 'NASZE USŁUGI', href: '/#our-services', current: false },
+  { name: 'JAK DOJECHAĆ?', href: '/#destination', current: false },
   { name: 'KONTAKT', href: 'contact', current: false },
 ]
 

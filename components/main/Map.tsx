@@ -29,8 +29,8 @@ export default function Map() {
     };
 
     return (
-        <section id="destination" className="scroll-m-20">
-            <div className="flex flex-wrap mt-32 items-center justify-center">
+        <section id="destination" className="scroll-m-24">
+            <div className="flex flex-wrap mt-48 items-center justify-center">
                 <h2
                     className="pb-10 text-4xl text-center xl:text-left tracking-tight font-bold text-gray-900 sm:text-5xl md:text-4xl">
                     <span className="block xl:inline underline underline-offset-8 decoration-indigo-600">

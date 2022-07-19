@@ -2,7 +2,7 @@ import React from "react";
 
 export default function OurServices() {
   return (
-  <section id="our-services" className="scroll-m-5">
+  <section id="our-services" className="scroll-m-20">
       <div className="max-w-screen-xl mt-64 px-4 py-16 mx-auto sm:px-6 lg:px-8">
         <h2 className="text-4xl text-center tracking-tight font-bold text-gray-900 sm:text-5xl md:text-4xl">
           <span className="block xl:inline underline underline-offset-8 decoration-indigo-600">Nasze usługi</span>
